@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Reviews | Bella’s Artisan Bakery</title>
+</head>
+<body>
+
+  <!-- Header section with logo and title -->
+  <header>
+    <img src="../images/logo.jpg" alt="logo img" width="150" height="150">
+    <h1>Customer Reviews</h1>
+    <p>See what our happy customers have to say!</p>
+  </header>
+
+  <!-- Navigation menu linking to all main pages -->
+  <nav>
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="visitUs.html">Visit Us</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Reviews Section: Displays existing customer reviews -->
+    <section id="reviews">
+      <h2>What Our Customers Say</h2>
+
+      <!-- Individual customer review -->
+      <article>
+        <h3>🌟🌟🌟🌟🌟</h3>
+        <p><em>"The sourdough bread is the best I’ve ever had! Crispy crust and soft inside. We buy a loaf every week."</em></p>
+        <p><strong>- Amanda, Cape Town</strong></p>
+      </article>
+
+      <article>
+        <h3>🌟🌟🌟🌟🌟</h3>
+        <p><em>"Bella’s cakes are works of art! She made our daughter’s birthday cake and it was stunning and delicious."</em></p>
+        <p><strong>- James & Priya</strong></p>
+      </article>
+
+      <article>
+        <h3>🌟🌟🌟🌟</h3>
+        <p><em>"Love the pastries with my morning coffee. The croissants taste like Paris!"</em></p>
+        <p><strong>- Thabo</strong></p>
+      </article>
+
+      <article>
+        <h3>🌟🌟🌟🌟🌟</h3>
+        <p><em>"Friendly staff, cozy shop, and the fruit tarts are to die for. Highly recommend."</em></p>
+        <p><strong>- Claire</strong></p>
+      </article>
+    </section>
+
+    <!-- Leave Review Section: Form for visitors to submit their own reviews -->
+    <section id="leave-review">
+      <h2>Leave a Review</h2>
+      <p>We’d love to hear from you! Share your experience below:</p>
+
+      <!-- Review submission form -->
+      <form action="#" method="post">
+        <!-- Name input -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- Rating dropdown -->
+        <label for="rating">Rating:</label><br>
+        <select id="rating" name="rating" required>
+          <option value="">--Select--</option>
+          <option value="5">5 Stars</option>
+          <option value="4">4 Stars</option>
+          <option value="3">3 Stars</option>
+          <option value="2">2 Stars</option>
+          <option value="1">1 Star</option>
+        </select><br><br>
+
+        <!-- Review text area -->
+        <label for="review">Your Review:</label><br>
+        <textarea id="review" name="review" rows="5" required></textarea><br><br>
+
+        <!-- Submit button -->
+        <button type="submit">Submit Review</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer section -->
+  <footer>
+    <p>© 2025 Bella’s Artisan Bakery | Cape Town</p>
+  </footer>
+
+  <!-- =========================
+  REFERENCES / SOURCES
+  ========================= -->
+
+  <!--
+  Code & Layout References:
+  1. MDN Web Docs (2025) "HTML <section> element" – used for content sections.
+    Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section
+  2. W3Schools (2025) "HTML Forms" – used for contact form structure.
+    Available at: https://www.w3schools.com/html/html_forms.asp
+  3. CSS-Tricks (2025) "Structuring a Simple Website" – for header/nav/main/footer layout.
+    Available at: https://css-tricks.com/snippets/html/simple-layout/
+
+  Images:
+  1. Logo & Bakery Images:
+    - Logo: Created locally (logo.jpg)
+    - Product Images: Sourced from Unsplash
+      Example: https://unsplash.com/s/photos/bakery
+  2. Team Photos: Unsplash free-to-use images
+    Example: https://unsplash.com/s/photos/baker
+  -->
+
+</body>
+</html>

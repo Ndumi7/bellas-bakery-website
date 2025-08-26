@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /> <!-- Sets the character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Ensures responsiveness on mobile -->
+  <title>Contact | Bella’s Artisan Bakery</title> <!-- Page title -->
+</head>
+<body>
+
+  <!-- ===== HEADER SECTION ===== -->
+  <header>
+    <img src="../images/logo.jpg" alt="logo img" width="150" height="150"> <!-- Bakery logo -->
+    <h1>Contact Bella’s Artisan Bakery</h1>
+    <p>We’d love to hear from you!</p>
+  </header>
+
+  <!-- ===== NAVIGATION BAR ===== -->
+  <nav>
+    <ul>
+      <li><a href="homepage.html">Home</a></li> <!-- Link to Home page -->
+      <li><a href="about.html">About</a></li> <!-- Link to About page -->
+      <li><a href="menu.html">Menu</a></li> <!-- Link to Menu page -->
+      <li><a href="visitUs.html">Visit Us</a></li> <!-- Link to Visit Us page -->
+      <li><a href="reviews.html">Reviews</a></li> <!-- Link to Reviews page -->
+    </ul>
+  </nav>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+
+    <!-- === CONTACT INFORMATION SECTION === -->
+    <section aria-labelledby="contact-info-heading">
+      <h2 id="contact-info-heading">Contact Information</h2>
+      <!-- Main contact details (email, phone, social media) -->
+      <p>
+        Email: <a href="mailto:info@bellasbakery.co.za">info@bellasbakery.co.za</a><br>
+        Phone: <a href="tel:+27211234567">+27 21 123 4567</a><br>
+        Instagram: <a href="#" rel="noopener">instagram.com/bellasbakery</a><br>
+        Facebook: <a href="#" rel="noopener">facebook.com/bellasbakery</a>
+      </p>
+    </section>
+
+    <!-- === LOCATIONS SECTION === -->
+    <section aria-labelledby="locations-heading">
+      <h2 id="locations-heading">Our Locations</h2>
+
+      <!-- Location 1: Cape Town CBD -->
+      <article aria-labelledby="cbd-heading">
+        <h3 id="cbd-heading">Cape Town CBD</h3>
+        <address>
+          123 Main Street, Cape Town CBD, 8000<br>
+          Hours: Mon–Sat 7:00–18:00, Sun 8:00–14:00
+        </address>
+        <p>
+          <a href="https://www.google.com/maps?q=123+Main+Street,+Cape+Town+CBD&hl=en" target="_blank" rel="noopener">
+            Open in Google Maps
+          </a>
+        </p>
+        <!-- Embedded Google Map -->
+        <iframe
+          title="Map: Cape Town CBD location"
+          src="https://www.google.com/maps?q=123+Main+Street,+Cape+Town+CBD&output=embed"
+          width="100%"
+          height="300"
+          style="border:0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </article>
+
+      <!-- Location 2: Sea Point -->
+      <article aria-labelledby="seapoint-heading">
+        <h3 id="seapoint-heading">Sea Point</h3>
+        <address>
+          45 Beach Road, Sea Point, Cape Town, 8060<br>
+          Hours: Mon–Sat 7:00–18:00, Sun 8:00–14:00
+        </address>
+        <p>
+          <a href="https://www.google.com/maps?q=45+Beach+Road,+Sea+Point,+Cape+Town&hl=en" target="_blank" rel="noopener">
+            Open in Google Maps
+          </a>
+        </p>
+        <!-- Embedded Google Map -->
+        <iframe
+          title="Map: Sea Point location"
+          src="https://www.google.com/maps?q=45+Beach+Road,+Sea+Point,+Cape+Town&output=embed"
+          width="100%"
+          height="300"
+          style="border:0"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </article>
+    </section>
+
+    <!-- === CONTACT FORM SECTION === -->
+    <section aria-labelledby="form-heading">
+      <h2 id="form-heading">Send Us a Message</h2>
+
+      <!-- Contact form (not yet connected to backend) -->
+      <form action="#" method="post">
+        <!-- User details -->
+        <fieldset>
+          <legend>Your Details</legend>
+
+          <label for="name">Full Name</label><br>
+          <input type="text" id="name" name="name" required><br><br>
+
+          <label for="email">Email</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="phone">Phone</label><br>
+          <input type="tel" id="phone" name="phone" placeholder="+27 ..." pattern="[\d+\s()-]{7,}"><br><br>
+        </fieldset>
+
+        <!-- User message -->
+        <fieldset>
+          <legend>Message</legend>
+
+          <label for="subject">Subject</label><br>
+          <input type="text" id="subject" name="subject" required><br><br>
+
+          <label for="message">Your Message</label><br>
+          <textarea id="message" name="message" rows="6" required></textarea><br><br>
+
+          <label for="locationSelect">Preferred Location</label><br>
+          <select id="locationSelect" name="preferred_location" required>
+            <option value="">-- Choose a location --</option>
+            <option value="cbd">Cape Town CBD</option>
+            <option value="seapoint">Sea Point</option>
+          </select><br><br>
+
+          <!-- Newsletter opt-in -->
+          <label>
+            <input type="checkbox" name="newsletter" value="yes">
+            Subscribe to our newsletter
+          </label>
+        </fieldset>
+
+        <!-- Submit button -->
+        <p>
+          <button type="submit">Send Message</button>
+        </p>
+
+        <!-- Disclaimer -->
+        <p>
+          By submitting this form you agree to our data handling for the purpose of responding to your enquiry.
+        </p>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER SECTION ===== -->
+  <footer>
+    <p>© 2025 Bella’s Artisan Bakery | Cape Town</p>
+  </footer>
+
+  <!-- =========================
+  REFERENCES / SOURCES
+  ========================= -->
+
+  <!--
+  Code & Layout References:
+  1. MDN Web Docs (2025) "HTML <section> element" – used for content sections.
+    Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section
+  2. W3Schools (2025) "HTML Forms" – used for contact form structure.
+    Available at: https://www.w3schools.com/html/html_forms.asp
+  3. CSS-Tricks (2025) "Structuring a Simple Website" – for header/nav/main/footer layout.
+    Available at: https://css-tricks.com/snippets/html/simple-layout/
+
+  Images:
+  1. Logo & Bakery Images:
+    - Logo: Created locally (logo.jpg)
+    - Product Images: Sourced from Unsplash
+      Example: https://unsplash.com/s/photos/bakery
+  2. Team Photos: Unsplash free-to-use images
+    Example: https://unsplash.com/s/photos/baker
+  -->
+
+</body>
+</html>
