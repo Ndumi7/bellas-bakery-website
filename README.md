@@ -48,6 +48,20 @@ Bella’s Artisan Bakery is a small business based in Cape Town, founded in 2018
 | Reviews Page                   | Customer testimonials and submission form          | 26 August 2025 - 16:30 |
 | GitHub Deployment              | Project pushed to GitHub                            | 26 August 2025 - 17:15 |
 
+Milestone	Description	Date Completed
+Project Setup	Folder structure and initial HTML files	26 August 2025 - 09:00
+Homepage Completion	Welcome, highlights, contact info	26 August 2025 - 10:15
+About Page	History, mission, vision, team members	26 August 2025 - 11:30
+Menu Page	Product listings with placeholder images	26 August 2025 - 13:00
+Visit Us Page	Locations and embedded maps	26 August 2025 - 14:30
+Contact Page	Form and multiple locations	26 August 2025 - 15:45
+Reviews Page	Customer testimonials and submission form	26 August 2025 - 16:30
+GitHub Deployment	Project pushed to GitHub	26 August 2025 - 17:15
+CSS Styling	Single CSS file for all pages, responsive design, menu cards	25 September 2025 - 09:45
+Menu Cards Update	Added price, hover effects, smaller card layout	25 September 2025 - 10:30
+Team Section	Team members displayed in styled cards	25 September 2025 - 11:15
+Google Fonts	Added “Suse Mono” font to site	25 September 2025 - 11:45
+
 ---
 
 ## 🗺️ Sitemap
