@@ -3,35 +3,35 @@
 <head>
   <meta charset="UTF-8" /> <!-- Sets the character encoding -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Ensures responsiveness on mobile -->
-  <title>Contact | Bella’s Artisan Bakery</title> <!-- Page title -->
+  <title>Contact | Bella’s Artisan Bakery</title>
+  <link rel="stylesheet" href="../css/style.css"> <!-- Unified stylesheet -->
 </head>
 <body>
 
   <!-- ===== HEADER SECTION ===== -->
-  <header>
-    <img src="../images/logo.jpg" alt="logo img" width="150" height="150"> <!-- Bakery logo -->
-    <h1>Contact Bella’s Artisan Bakery</h1>
-    <p>We’d love to hear from you!</p>
+  <header class="site-header">
+    <img src="../images/logo.jpg" alt="logo img" class="logo" width="150" height="150"> <!-- Bakery logo -->
+    <h1 class="page-title">Contact Bella’s Artisan Bakery</h1>
+    <p class="page-intro">We’d love to hear from you!</p>
   </header>
 
   <!-- ===== NAVIGATION BAR ===== -->
-  <nav>
+  <nav class="site-nav">
     <ul>
-      <li><a href="homepage.html">Home</a></li> <!-- Link to Home page -->
-      <li><a href="about.html">About</a></li> <!-- Link to About page -->
-      <li><a href="menu.html">Menu</a></li> <!-- Link to Menu page -->
-      <li><a href="visitUs.html">Visit Us</a></li> <!-- Link to Visit Us page -->
-      <li><a href="reviews.html">Reviews</a></li> <!-- Link to Reviews page -->
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="visitUs.html">Visit Us</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
     </ul>
   </nav>
 
   <!-- ===== MAIN CONTENT ===== -->
-  <main>
+  <main class="site-main">
 
     <!-- === CONTACT INFORMATION SECTION === -->
-    <section aria-labelledby="contact-info-heading">
-      <h2 id="contact-info-heading">Contact Information</h2>
-      <!-- Main contact details (email, phone, social media) -->
+    <section id="contact-info" class="contact-info">
+      <h2>Contact Information</h2>
       <p>
         Email: <a href="mailto:info@bellasbakery.co.za">info@bellasbakery.co.za</a><br>
         Phone: <a href="tel:+27211234567">+27 21 123 4567</a><br>
@@ -41,12 +41,12 @@
     </section>
 
     <!-- === LOCATIONS SECTION === -->
-    <section aria-labelledby="locations-heading">
-      <h2 id="locations-heading">Our Locations</h2>
+    <section id="locations" class="locations-section">
+      <h2>Our Locations</h2>
 
       <!-- Location 1: Cape Town CBD -->
-      <article aria-labelledby="cbd-heading">
-        <h3 id="cbd-heading">Cape Town CBD</h3>
+      <article class="location">
+        <h3>Cape Town CBD</h3>
         <address>
           123 Main Street, Cape Town CBD, 8000<br>
           Hours: Mon–Sat 7:00–18:00, Sun 8:00–14:00
@@ -56,12 +56,12 @@
             Open in Google Maps
           </a>
         </p>
-        <!-- Embedded Google Map -->
         <iframe
           title="Map: Cape Town CBD location"
           src="https://www.google.com/maps?q=123+Main+Street,+Cape+Town+CBD&output=embed"
           width="100%"
           height="300"
+          class="map"
           style="border:0"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
@@ -69,8 +69,8 @@
       </article>
 
       <!-- Location 2: Sea Point -->
-      <article aria-labelledby="seapoint-heading">
-        <h3 id="seapoint-heading">Sea Point</h3>
+      <article class="location">
+        <h3>Sea Point</h3>
         <address>
           45 Beach Road, Sea Point, Cape Town, 8060<br>
           Hours: Mon–Sat 7:00–18:00, Sun 8:00–14:00
@@ -80,12 +80,12 @@
             Open in Google Maps
           </a>
         </p>
-        <!-- Embedded Google Map -->
         <iframe
           title="Map: Sea Point location"
           src="https://www.google.com/maps?q=45+Beach+Road,+Sea+Point,+Cape+Town&output=embed"
           width="100%"
           height="300"
+          class="map"
           style="border:0"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
@@ -94,11 +94,10 @@
     </section>
 
     <!-- === CONTACT FORM SECTION === -->
-    <section aria-labelledby="form-heading">
-      <h2 id="form-heading">Send Us a Message</h2>
+    <section id="contact-form" class="contact-form-section">
+      <h2>Send Us a Message</h2>
 
-      <!-- Contact form (not yet connected to backend) -->
-      <form action="#" method="post">
+      <form action="#" method="post" class="contact-form">
         <!-- User details -->
         <fieldset>
           <legend>Your Details</legend>
@@ -139,11 +138,11 @@
 
         <!-- Submit button -->
         <p>
-          <button type="submit">Send Message</button>
+          <button type="submit" class="btn-submit">Send Message</button>
         </p>
 
         <!-- Disclaimer -->
-        <p>
+        <p class="form-disclaimer">
           By submitting this form you agree to our data handling for the purpose of responding to your enquiry.
         </p>
       </form>
@@ -152,31 +151,9 @@
   </main>
 
   <!-- ===== FOOTER SECTION ===== -->
-  <footer>
+  <footer class="site-footer">
     <p>© 2025 Bella’s Artisan Bakery | Cape Town</p>
   </footer>
-
-  <!-- =========================
-  REFERENCES / SOURCES
-  ========================= -->
-
-  <!--
-  Code & Layout References:
-  1. MDN Web Docs (2025) "HTML <section> element" – used for content sections.
-    Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section
-  2. W3Schools (2025) "HTML Forms" – used for contact form structure.
-    Available at: https://www.w3schools.com/html/html_forms.asp
-  3. CSS-Tricks (2025) "Structuring a Simple Website" – for header/nav/main/footer layout.
-    Available at: https://css-tricks.com/snippets/html/simple-layout/
-
-  Images:
-  1. Logo & Bakery Images:
-    - Logo: Created locally (logo.jpg)
-    - Product Images: Sourced from Unsplash
-      Example: https://unsplash.com/s/photos/bakery
-  2. Team Photos: Unsplash free-to-use images
-    Example: https://unsplash.com/s/photos/baker
-  -->
 
 </body>
 </html>

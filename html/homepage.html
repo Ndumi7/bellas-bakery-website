@@ -4,88 +4,75 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bella’s Artisan Bakery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 
-  <!-- Link to external CSS file (go up one folder, then into css/) -->
-  <link rel="stylesheet" href="../css/homepage.css">
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body class="site-body">
 
-  <!-- Header section with logo and bakery name -->
-  <header>
-    <!-- Bakery logo (image stored in ../images folder) -->
-    <img src="../images/logo.jpg" alt="logo img" width="150" height="150">
-    <h1>Bella’s Artisan Bakery</h1>
-    <p>Handmade bread, cakes, and pastries since 2018</p>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <img src="../images/logo.jpg" alt="logo img" class="logo" width="150" height="150">
+      <div class="header-text">
+        <h1 class="site-title">Bella’s Artisan Bakery</h1>
+        <p class="tagline">Handmade bread, cakes, and pastries since 2018</p>
+      </div>
+    </div>
   </header>
 
-  <!-- Navigation menu with links to other pages -->
-  <nav>
-    <ul>
-      <li><a href="homepage.html">Home</a></li> <!-- Homepage -->
-      <li><a href="about.html">About</a></li> <!-- About Page -->
-      <li><a href="menu.html">Menu</a></li> <!-- Menu Page -->
-      <li><a href="visitUs.html">Visit Us</a></li> <!-- Visit Us Page -->
-      <li><a href="reviews.html">Reviews</a></li> <!-- Reviews Page -->
+  <!-- Navigation -->
+  <nav class="site-nav">
+    <ul class="nav-list">
+      <li class="nav-item"><a href="homepage.html" class="nav-link">Home</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="menu.html" class="nav-link">Menu</a></li>
+      <li class="nav-item"><a href="visitUs.html" class="nav-link">Visit Us</a></li>
+      <li class="nav-item"><a href="reviews.html" class="nav-link">Reviews</a></li>
     </ul>
   </nav>
 
-  <main>
-    <!-- Welcome Section: Introduction to the bakery -->
-    <section id="welcome">
-      <h2>Welcome to Bella’s Artisan Bakery</h2>
-      <p>At Bella’s, we believe in the magic of fresh, handmade baking. From our crusty sourdough breads to indulgent cakes and buttery pastries, every bite is made with love and care.</p>
-      <p>Founded in 2018, our bakery has grown to become a favorite in Cape Town for families, tourists, and event planners looking for something special.</p>
+  <!-- Main Content -->
+  <main class="site-main">
+
+    <!-- Welcome -->
+    <section id="welcome" class="welcome-section">
+      <h2 class="section-title">Welcome to Bella’s Artisan Bakery</h2>
+      <p class="section-text">At Bella’s, we believe in the magic of fresh, handmade baking. From our crusty sourdough breads to indulgent cakes and buttery pastries, every bite is made with love and care.</p>
+      <p class="section-text">Founded in 2018, our bakery has grown to become a favorite in Cape Town for families, tourists, and event planners looking for something special.</p>
     </section>
 
-    <!-- Highlights Section: Key services and offerings -->
-    <section id="highlights">
-      <h2>What We Offer</h2>
-      <ul>
-        <li>Freshly baked artisan breads, daily.</li>
-        <li>Custom cakes for birthdays, weddings, and celebrations.</li>
-        <li>Delicious pastries, tarts, and croissants.</li>
-        <li>Friendly service with a warm community feel.</li>
+    <!-- Highlights -->
+    <section id="highlights" class="highlights-section">
+      <h2 class="section-title">What We Offer</h2>
+      <ul class="highlights-list">
+        <li class="highlight-item">Freshly baked artisan breads, daily.</li>
+        <li class="highlight-item">Custom cakes for birthdays, weddings, and celebrations.</li>
+        <li class="highlight-item">Delicious pastries, tarts, and croissants.</li>
+        <li class="highlight-item">Friendly service with a warm community feel.</li>
       </ul>
-      <!-- Link to full menu page -->
-      <p><a href="menu.html">See Our Full Menu →</a></p>
+      <p><a href="menu.html" class="btn-link">See Our Full Menu →</a></p>
     </section>
 
-    <!-- Contact Section: Contact details for customers -->
-    <section id="contact">
-      <h2>Get in Touch</h2>
-      <p>Email: <a href="mailto:info@bellasbakery.co.za">info@bellasbakery.co.za</a></p>
-      <p>Phone: +27 21 123 4567</p>
-      <p>Follow us on <a href="#">Instagram</a> & <a href="#">Facebook</a></p>
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+      <h2 class="section-title">Get in Touch</h2>
+      <p>Email: <a href="mailto:info@bellasbakery.co.za" class="contact-link">info@bellasbakery.co.za</a></p>
+      <p>Phone: <a href="tel:+27211234567" class="contact-link">+27 21 123 4567</a></p>
+      <p>Follow us on 
+        <a href="#" class="social-link">Instagram</a> & 
+        <a href="#" class="social-link">Facebook</a>
+      </p>
     </section>
   </main>
 
-  <!-- Footer Section -->
-  <footer>
+  <!-- Footer -->
+  <footer class="site-footer">
     <p>© 2025 Bella’s Artisan Bakery | Cape Town</p>
   </footer>
 
-  <!-- =========================
-  REFERENCES / SOURCES
-  ========================= -->
-
-  <!--
-  Code & Layout References:
-  1. MDN Web Docs (2025) "HTML <section> element" – used for content sections.
-    Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/section
-  2. W3Schools (2025) "HTML Forms" – used for contact form structure.
-    Available at: https://www.w3schools.com/html/html_forms.asp
-  3. CSS-Tricks (2025) "Structuring a Simple Website" – for header/nav/main/footer layout.
-    Available at: https://css-tricks.com/snippets/html/simple-layout/
-
-  Images:
-  1. Logo & Bakery Images:
-    - Logo: Created locally (logo.jpg)
-    - Product Images: Sourced from Unsplash
-      Example: https://unsplash.com/s/photos/bakery
-  2. Team Photos: Unsplash free-to-use images
-    Example: https://unsplash.com/s/photos/baker
-  -->
-
 </body>
 </html>
-

@@ -4,78 +4,87 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Us | Bella’s Artisan Bakery</title>
+  <link rel="stylesheet" href="../css/style.css"> <!-- Link to main stylesheet -->
 </head>
 <body>
 
   <!-- Header with logo, title, and intro text -->
-  <header>
-    <img src="../images/logo.jpg" alt="logo img" width="150" height="150">
-    <h1>About Us</h1>
-    <p>Learn more about our story, our mission, and the people behind Bella’s Bakery.</p>
+  <header class="site-header">
+    <img src="../images/logo.jpg" alt="logo img" class="logo" width="150" height="150">
+    <h1 class="page-title">About Us</h1>
+    <p class="page-intro">Learn more about our story, our mission, and the people behind Bella’s Bakery.</p>
   </header>
 
   <!-- Navigation bar linking to other pages -->
-  <nav>
+  <nav class="site-nav">
     <ul>
-      <li><a href="homepage.html">Home</a></li> <!-- Homepage -->
-      <li><a href="about.html">About</a></li> <!-- About page -->
-      <li><a href="menu.html">Menu</a></li> <!-- Menu page -->
-      <li><a href="visitUs.html">Visit Us</a></li> <!-- Visit Us page -->
-      <li><a href="reviews.html">Reviews</a></li> <!-- Reviews page -->
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="visitUs.html">Visit Us</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
     </ul>
   </nav>
 
-  <main>
+  <main class="site-main">
     <!-- History section -->
-    <section id="history">
-      <h2>Our History</h2>
+    <section id="history" class="about-section">
+      <h2 class="section-title">Our History</h2>
       <p>Bella’s Artisan Bakery was founded in 2018 in Cape Town by Bella, a passionate baker who grew up learning the art of breadmaking and pastry from her grandmother. What started as a small kitchen project quickly grew into a beloved community bakery, serving families, tourists, and local cafés.</p>
       <p>Since then, Bella’s Bakery has become a trusted name for fresh, handmade breads, cakes, and pastries crafted with ingredients sourced from local farmers.</p>
     </section>
 
     <!-- Mission & Vision section -->
-    <section id="mission-vision">
-      <h2>Mission & Vision</h2>
+    <section id="mission-vision" class="about-section">
+      <h2 class="section-title">Mission & Vision</h2>
       <p><strong>Mission:</strong> To make tasty food with love, using fresh, locally sourced ingredients.</p>
       <p><strong>Vision:</strong> To be the top bakery in Cape Town, known for quality, creativity, and community spirit.</p>
     </section>
 
-    <!-- Team section: showcasing team members -->
-    <section id="team">
-      <h2>Meet Our Team</h2>
+    <!-- Team section -->
+<section id="team" class="about-section">
+  <h2 class="section-title">Meet Our Team</h2>
+  <div class="team-grid">
 
-      <!-- Team Member: Bella -->
-      <article>
-        <h3>Bella (Founder & Head Baker)</h3>
-        <p>Bella leads the bakery with a passion for artisanal baking and creativity in every recipe.</p>
-        <img src="../images/team-bella.jpg" alt="Bella - Head Baker" width="200" height="200">
-      </article>
+    <!-- Team Member: Bella -->
+    <div class="team-card">
+      <img src="../images/Bella.jpg" alt="Bella - Head Baker" class="team-photo">
+      <h3 class="team-name">Bella</h3>
+      <p class="team-role">Founder & Head Baker</p>
+      <p class="team-desc">Bella leads the bakery with a passion for artisanal baking and creativity in every recipe.</p>
+    </div>
 
-      <!-- Team Member: David -->
-      <article>
-        <h3>David (Pastry Chef)</h3>
-        <p>David specializes in crafting delicate pastries, croissants, and seasonal tarts that customers love.</p>
-        <img src="../images/team-david.jpg" alt="David - Pastry Chef" width="200" height="200">
-      </article>
+    <!-- Team Member: David -->
+    <div class="team-card">
+      <img src="../images/David.jpg" alt="David - Pastry Chef" class="team-photo">
+      <h3 class="team-name">David</h3>
+      <p class="team-role">Pastry Chef</p>
+      <p class="team-desc">David specializes in crafting delicate pastries, croissants, and seasonal tarts that customers love.</p>
+    </div>
 
-      <!-- Team Member: Sarah -->
-      <article>
-        <h3>Sarah (Cake Designer)</h3>
-        <p>Sarah is our cake artist, known for stunning custom celebration cakes and creative designs.</p>
-        <img src="../images/team-sarah.jpg" alt="Sarah - Cake Designer" width="200" height="200">
-      </article>
+    <!-- Team Member: Sarah -->
+    <div class="team-card">
+      <img src="../images/Sarah.jpg" alt="Sarah - Cake Designer" class="team-photo">
+      <h3 class="team-name">Sarah</h3>
+      <p class="team-role">Cake Designer</p>
+      <p class="team-desc">Sarah is our cake artist, known for stunning custom celebration cakes and creative designs.</p>
+    </div>
 
-      <!-- Team Member: Michael -->
-      <article>
-        <h3>Michael (Barista & Customer Care)</h3>
-        <p>Michael ensures every customer feels at home, serving fresh coffee and warm smiles daily.</p>
-        <img src="../images/team-michael.jpg" alt="Michael - Barista" width="200" height="200">
-      </article>
-    </section>
+    <!-- Team Member: Michael -->
+    <div class="team-card">
+      <img src="../images/Michael.jpg" alt="Michael - Barista" class="team-photo">
+      <h3 class="team-name">Michael</h3>
+      <p class="team-role">Barista & Customer Care</p>
+      <p class="team-desc">Michael ensures every customer feels at home, serving fresh coffee and warm smiles daily.</p>
+    </div>
+
+  </div>
+</section>
+
   </main>
 
   <!-- Footer -->
-  <footer>
+  <footer class="site-footer">
     <p>© 2025 Bella’s Artisan Bakery | Cape Town</p>
   </footer>
 

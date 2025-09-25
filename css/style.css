@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+/* ==============================
+   Global Styles
+   ============================== */
+body {
+  font-family: "SUSE mono";
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #fff8f0;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ==============================
+   Header
+   ============================== */
+header {
+  text-align: center;
+  background-color: #f4e1d2;
+  padding: 2rem 1rem;
+}
+
+header img {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  margin: 0.5rem 0;
+  font-size: 2.5rem;
+  color: #8b3a1e;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* ==============================
+   Navigation
+   ============================== */
+nav {
+  background-color: #b85c38;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #8b3a1e;
+  border-radius: 5px;
+}
+
+/* ==============================
+   Main Content
+   ============================== */
+main {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+/* ==============================
+   Section Titles
+   ============================== */
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #8b3a1e;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 3px;
+  background: #e2b091;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* ==============================
+   Menu Cards
+   ============================== */
+.menu-section {
+  margin-bottom: 3rem;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.menu-card {
+  background-color: #fff;
+  border: 1px solid #e2b091;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  max-width: 220px; /* smaller card */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 0.8rem;
+}
+
+.menu-card h3 {
+  font-size: 1.1rem;
+  color: #b85c38;
+  margin-bottom: 0.5rem;
+}
+
+.menu-card p {
+  font-size: 0.9rem;
+  color: #444;
+  margin: 0.3rem 0;
+}
+/* ==============================
+   Team Cards
+   ============================== */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.team-card {
+  background: #fff;
+  border: 1px solid #e2b091;
+  border-radius: 12px;
+  padding: 1.2rem;
+  text-align: center;
+  max-width: 240px;
+  display: flex;
+  flex-direction: column; /* stack contents vertically */
+  justify-content: space-between; /* stretch content evenly */
+  height: 100%; /* equal height in grid */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.team-photo {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+}
+
+.team-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #b85c38;
+  margin-bottom: 0.3rem;
+}
+
+.team-role {
+  font-size: 1rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 0.8rem;
+}
+
+.team-desc {
+  font-size: 0.9rem;
+  color: #444;
+  flex-grow: 1; /* pushes description to fill space evenly */
+}
+
+
+.price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #b33a3a;
+  margin-top: 0.5rem;
+}
+
+/* ==============================
+   Contact Form
+   ============================== */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 1.5rem;
+  border: 1px solid #e2b091;
+  border-radius: 10px;
+}
+
+form label {
+  font-weight: bold;
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  background-color: #b85c38;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #8b3a1e;
+}
+
+/* ==============================
+   Footer
+   ============================== */
+footer {
+  text-align: center;
+  background-color: #f4e1d2;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* ==============================
+   Responsive Design
+   ============================== */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}
