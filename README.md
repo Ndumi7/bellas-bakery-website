@@ -78,6 +78,11 @@ Edit
 | 1.1     | 26 August 2025 - 13:00 | Added placeholder images to menu items             |
 | 1.2     | 26 August 2025 - 14:30 | Added comments, references, and section IDs        |
 | 1.3     | 26 August 2025 - 15:45 | Integrated contact form and multiple locations     |
+| 1.4	    | 25 September 2025 - 09:45 |	Consolidated CSS into a single file, added responsive design |
+| 1.5	    | 25 September 2025 - 10:30	| Updated menu page with cards, added prices and hover effects |
+| 1.6	    | 25 September 2025 - 11:15 |	Created team section with member cards and images |
+| 1.7	    | 25 September 2025 - 11:45 |	Added Google Font “Suse Mono” to site |
+| 1.8	    | 25 September 2025 - 12:20	| Added sketch/doodle style background to header |
 
 ---
 
